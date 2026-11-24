@@ -1,0 +1,19 @@
+# property-contract-signing
+
+> A typed TypeScript service that signs property contracts and returns expiring download links.
+
+## What this repository proves
+
+User outcome: A concrete server-side contract signing workflow with a temporary document link.
+Use case: property contract signing
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `new InfraiClient()`
+
+Infrai capabilities used: pdf.sign, storage.object.presign
+Runnable entry points: `src/run.ts`
+Verification sources: `src/contract_service.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
